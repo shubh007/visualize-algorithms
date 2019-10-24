@@ -94,4 +94,11 @@
     position: absolute;
     top: 4%;
     font-size: 3rem;
+    color: azure;
+    background-color: darkcyan;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    width: 18%;
+    justify-content: center;
 }
