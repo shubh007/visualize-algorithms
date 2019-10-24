@@ -1,0 +1,92 @@
+.myContainer{
+    background-color: #17a2b8;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputCover{
+    width: 40%;
+    height: 40%;
+    background-color: darkcyan;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.inputRowCover{
+    height: calc(100% / 10);
+    min-width: 100%;
+    display: flex;
+}
+.inputColCover{
+    height: 100%;
+    min-width: calc(100% /10);
+}
+.inputVal{
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputVal[isVisited='true']{
+    background-color: rgb(153, 0, 255); 
+}
+.inputVal[isSource='true']{
+    background-color: #28a745; 
+}
+.inputVal[isTarget='true']{
+    background-color: #28a745;; 
+}
+.inputVal[isObstacle='true']{
+    background-color: #dc3545  ; 
+}
+.inputVal[isInQueue='true']{
+    background-color: rgb(255, 123, 0); 
+}
+.rowscover{
+    position: absolute;
+    height: 10%;
+    width: 40%;
+    top: 14%;
+    left: 30%;
+    background-color: darkcyan;
+}
+.rowsXcover{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.rowsXVal{
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rowsYcover{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.rowsYVal{
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    width: 7%;
+    height: 4%;
+    background-color: #6610f2;
+    position: absolute;
+    top: 76%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}

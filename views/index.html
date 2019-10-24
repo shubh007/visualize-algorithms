@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../csslib/bootstrap.css" >
+    
+    <link rel="stylesheet" href="../css/index.css" >
+
+
+    <!-- JBootstrap Js Dependencies-->
+    <script src="../jslib/jquery-3.3.1.slim.js" ></script>
+    <script src="../jslib/popper.js" ></script>
+    <script src="../jslib/bootstrap.js" ></script>
+
+     <!-- JBootstrap Js Dependencies-->
+    <script src="../jslib/angular.js"></script>
+
+    <script src="../js/index.js" ></script>    
+    <title>tailf</title>
+
+    <link rel="icon" href="../img/tailf.png" type="image/gif" sizes="16x16">
+
+  </head>
+  <body ng-app="myApp">
+  <div ng-controller="myCtrl" class="myContainer">
+ 
+    <div class="rowscover">  
+  <div class="rowsXcover">
+    <div class="rowsXVal" ng-repeat="rx in xPaths track by $index" ng-bind="rx"></div>
+  </div>
+  <div class="rowsYcover">
+    <div class="rowsYVal" ng-repeat="ry in yPaths track by $index" ng-bind="ry"></div>
+  </div>
+</div>
+    <div class="inputCover" >
+	<div class="inputRowCover" ng-repeat="rows in inputMatrixNodes">
+    <div class="inputColCover" ng-repeat="val in rows">
+        <div class="inputVal" isVisited="{{val.isVisited}}" 
+        isSource="{{val.isSource}}" isTarget="{{val.isTarget}}" 
+        isObstacle="{{val.isObstacle}}" isInQueue="{{val.isInQueue}}" ng-bind="(val.value) +' # '+(val.distFromSource)"></div>
+    </div>
+  </div>
+  </div>
+  <div class="search" ng-click="start()">Search</div>
+  
+  </div>
+  </body>
+</html>
