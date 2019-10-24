@@ -90,3 +90,8 @@
     cursor: pointer;
     justify-content: center;
 }
+.heading{
+    position: absolute;
+    top: 4%;
+    font-size: 3rem;
+}
